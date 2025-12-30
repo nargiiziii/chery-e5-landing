@@ -57,13 +57,13 @@
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/username/chery-omoda-e5-site.git
+git clone https://github.com/nargiiziii/chery-e5-landing.git
 ```
 
 2. Navigate to the project folder:
 
 ```bash
-cd chery-omoda-e5-site
+cd chery-e5-landing
 ```
 
 3. Open `index.html` in your browser or run a local server for full functionality.
