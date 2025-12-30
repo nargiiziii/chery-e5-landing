@@ -1,4 +1,4 @@
-# Chery Omoda E5 Website 🚗⚡
+# Chery Omoda E5 Website ⚡
 
 **Chery Omoda E5** is a modern electric vehicle that combines **innovation, comfort, and sustainability**. This project is a website showcasing all the car’s features, technologies, and benefits for potential customers.
 
