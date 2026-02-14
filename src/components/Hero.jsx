@@ -94,7 +94,7 @@ const Hero = () => {
             <div className="relative">
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl group">
                 <img
-                  src="/images/car-hero.jpg"
+                  src={`${import.meta.env.BASE_URL}images/car-hero.jpg`}
                   alt="Chery E5 Electric Vehicle"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />

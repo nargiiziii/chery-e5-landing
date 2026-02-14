@@ -79,7 +79,7 @@ const Vehicle = () => {
             {/* Image placeholder */}
             <div className="relative aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src={`/images/car-colors/${selectedColor === 0 ? "green" : selectedColor === 1 ? "white" : selectedColor === 2 ? "black" : "silver"}.jpg`}
+                src={`${import.meta.env.BASE_URL}images/car-colors/${selectedColor === 0 ? "green" : selectedColor === 1 ? "white" : selectedColor === 2 ? "black" : "silver"}.jpg`}
                 alt={`Chery E5 ${colors[selectedColor].name}`}
                 className="w-full h-full object-cover"
               />

@@ -28,7 +28,7 @@ const NewEra = () => {
               {/* Main image placeholder */}
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl group">
                 <img
-                  src="/images/wheel.webp"
+                  src={`${import.meta.env.BASE_URL}images/wheel.webp`} 
                   alt="Chery E5 Wheel Design"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />

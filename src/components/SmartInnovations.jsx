@@ -13,25 +13,21 @@ const SmartInnovations = () => {
       title: "Seamless Flow",
       description:
         "Intelligent flow management system for a smooth and effortless ride",
-      image: "🔄",
     },
     {
       icon: Cpu,
       title: "Smart Processor",
       description: "High-performance processor for lightning-fast data processing",
-      image: "🖥️",
     },
     {
       icon: Eye,
       title: "Intelligent Guidance",
       description: "Smart control system and advanced driver assistance features",
-      image: "👁️",
     },
     {
       icon: Wifi,
       title: "Intelligent in a Glance",
       description: "Instant access to critical information with just one look",
-      image: "📊",
     },
   ];
 
@@ -116,7 +112,7 @@ const SmartInnovations = () => {
           >
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="/images/interior.jpg"
+                src={`${import.meta.env.BASE_URL}images/interior.jpg`} 
                 alt="Chery E5 Interior"
                 className="w-full h-full object-cover"
               />
@@ -164,7 +160,7 @@ const SmartInnovations = () => {
             <div className="md:col-span-2">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/images/dashboard.jpg"
+                  src={`${import.meta.env.BASE_URL}images/dashboard.jpg`} 
                   alt="Energy Dashboard"
                   className="w-full h-full object-cover"
                 />

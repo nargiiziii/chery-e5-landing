@@ -108,7 +108,7 @@ const Features = () => {
           <div className="mb-16">
             <div className="aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="/images/car-side.webp"
+                src={`${import.meta.env.BASE_URL}images/car-side.webp`}
                 alt="Chery E5 Side View"
                 className="w-full h-full object-cover"
               />
