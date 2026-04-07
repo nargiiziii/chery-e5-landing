@@ -30,12 +30,10 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials" className="section-padding bg-gradient-to-b from-steel-900 to-steel-800 relative overflow-hidden">
-      {/* Background decoration */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-jade-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl"></div>
 
       <div className="container-custom relative z-10" ref={ref}>
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -50,7 +48,6 @@ const Testimonials = () => {
           </p>
         </motion.div>
 
-        {/* Testimonials Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
@@ -60,24 +57,20 @@ const Testimonials = () => {
               transition={{ delay: index * 0.2, duration: 0.6 }}
               className="glass-card p-8 hover:bg-white/15 transition-all duration-300 group relative"
             >
-              {/* Quote icon */}
               <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-jade-400 to-jade-600 rounded-full flex items-center justify-center shadow-lg">
                 <Quote className="w-6 h-6 text-white" />
               </div>
 
-              {/* Stars */}
               <div className="flex gap-1 mb-4 mt-2">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-jade-400 text-jade-400" />
                 ))}
               </div>
 
-              {/* Text */}
               <p className="text-steel-200 leading-relaxed mb-6 italic">
                 "{testimonial.text}"
               </p>
 
-              {/* Author */}
               <div className="border-t border-white/10 pt-4">
                 <p className="font-display text-lg font-bold gradient-text">
                   {testimonial.author}
@@ -87,13 +80,11 @@ const Testimonials = () => {
                 </p>
               </div>
 
-              {/* Hover effect */}
               <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-jade-400 to-jade-600 group-hover:w-full transition-all duration-500 rounded-b-2xl"></div>
             </motion.div>
           ))}
         </div>
 
-        {/* Bottom CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}

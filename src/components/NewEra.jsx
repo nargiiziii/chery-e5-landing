@@ -9,7 +9,6 @@ const NewEra = () => {
 
   return (
     <section className="section-padding bg-gradient-to-b from-steel-800 via-jade-900/20 to-steel-900 relative overflow-hidden">
-      {/* Animated background */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-jade-600/20 via-transparent to-transparent"></div>
         <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-jade-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -17,7 +16,6 @@ const NewEra = () => {
 
       <div className="container-custom relative z-10" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left - Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -25,7 +23,6 @@ const NewEra = () => {
             className="order-2 lg:order-1"
           >
             <div className="relative">
-              {/* Main image placeholder */}
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl group">
                 <img
                   src={`${import.meta.env.BASE_URL}images/wheel.webp`} 
@@ -34,7 +31,6 @@ const NewEra = () => {
                 />
               </div>
 
-              {/* Floating badge */}
               <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -49,7 +45,6 @@ const NewEra = () => {
             </div>
           </motion.div>
 
-          {/* Right - Content */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -99,7 +94,6 @@ const NewEra = () => {
               </motion.p>
             </div>
 
-            {/* Features list */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -119,7 +113,6 @@ const NewEra = () => {
               ))}
             </motion.div>
 
-            {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -138,7 +131,6 @@ const NewEra = () => {
               <button className="btn-secondary">Check Pricing</button>
             </motion.div>
 
-            {/* Stats */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}

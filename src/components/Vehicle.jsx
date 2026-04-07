@@ -39,11 +39,9 @@ const Vehicle = () => {
       id="vehicle"
       className="section-padding bg-gradient-to-b from-steel-900 via-steel-800 to-steel-900 relative overflow-hidden"
     >
-      {/* Background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-jade-900/10 via-transparent to-transparent"></div>
 
       <div className="container-custom relative z-10" ref={ref}>
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -65,7 +63,6 @@ const Vehicle = () => {
           </p>
         </motion.div>
 
-        {/* Main Vehicle Showcase */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -73,10 +70,8 @@ const Vehicle = () => {
           className="mb-12"
         >
           <div className="relative aspect-[16/9] bg-gradient-to-br from-steel-700/20 to-jade-900/10 rounded-3xl backdrop-blur-sm border border-white/10 overflow-hidden group">
-            {/* Background glow */}
             <div className="absolute inset-0 bg-gradient-to-br from-jade-400/0 via-jade-400/5 to-jade-600/10 group-hover:from-jade-400/10 group-hover:via-jade-400/20 group-hover:to-jade-600/30 transition-all duration-500"></div>
 
-            {/* Image placeholder */}
             <div className="relative aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl">
               <img
                 src={`${import.meta.env.BASE_URL}images/car-colors/${selectedColor === 0 ? "green" : selectedColor === 1 ? "white" : selectedColor === 2 ? "black" : "silver"}.jpg`}
@@ -85,7 +80,6 @@ const Vehicle = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-steel-900/60 to-transparent"></div>
 
-              {/* Navigation arrows */}
               <button className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 backdrop-blur-md hover:bg-white/20 rounded-full flex items-center justify-center transition-all">
                 <ChevronLeft className="text-white" />
               </button>
@@ -96,8 +90,6 @@ const Vehicle = () => {
           </div>
         </motion.div>
 
-        {/* Color Selection */}
-        {/* Color Selection */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -106,12 +98,10 @@ const Vehicle = () => {
         >
           <div className="glass-card p-6 md:p-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              {/* Название цвета: меньше шрифт на мобилках, чтобы не занимал много места */}
               <h3 className="font-display text-xl md:text-2xl font-bold text-center md:text-left">
                 {colors[selectedColor].name}
               </h3>
 
-              {/* Контейнер кружочков: flex-nowrap + меньше размер (w-10) на мобильных */}
               <div className="flex flex-nowrap gap-3 md:gap-4">
                 {colors.map((color, index) => (
                   <button
@@ -129,7 +119,6 @@ const Vehicle = () => {
           </div>
         </motion.div>
 
-        {/* Specifications */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -151,7 +140,6 @@ const Vehicle = () => {
           ))}
         </motion.div>
 
-        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -166,7 +154,6 @@ const Vehicle = () => {
           </button>
         </motion.div>
 
-        {/* Pagination dots */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}

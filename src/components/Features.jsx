@@ -78,12 +78,10 @@ const Features = () => {
       id="features"
       className="section-padding bg-gradient-to-b from-steel-900 to-steel-800 relative overflow-hidden"
     >
-      {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-jade-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-jade-600/5 rounded-full blur-3xl"></div>
 
       <div className="container-custom relative z-10" ref={ref}>
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -98,7 +96,6 @@ const Features = () => {
           </h3>
         </motion.div>
 
-        {/* Image Placeholder */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -116,7 +113,6 @@ const Features = () => {
           </div>
         </motion.div>
 
-        {/* Features Grid */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -132,14 +128,12 @@ const Features = () => {
                 className="feature-card group"
               >
                 <div className="space-y-4">
-                  {/* Icon */}
                   <div
                     className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.color} p-4 group-hover:scale-110 transition-transform duration-300`}
                   >
                     <Icon className="w-full h-full text-white" />
                   </div>
 
-                  {/* Content */}
                   <div className="space-y-2">
                     <h3 className="font-display text-2xl font-bold text-white">
                       {feature.title}
@@ -153,7 +147,6 @@ const Features = () => {
                   </div>
                 </div>
 
-                {/* Hover effect line */}
                 <div className="mt-6 h-1 w-0 bg-gradient-to-r from-jade-400 to-jade-600 group-hover:w-full transition-all duration-500"></div>
               </motion.div>
             );

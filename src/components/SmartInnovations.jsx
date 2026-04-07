@@ -47,12 +47,10 @@ const SmartInnovations = () => {
       id="innovations"
       className="section-padding bg-gradient-to-b from-steel-800 to-steel-900 relative overflow-hidden"
     >
-      {/* Background elements */}
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-jade-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl"></div>
 
       <div className="container-custom relative z-10" ref={ref}>
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -67,9 +65,7 @@ const SmartInnovations = () => {
           </p>
         </motion.div>
 
-        {/* Main Grid */}
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
-          {/* Left - Innovation Cards */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -103,7 +99,6 @@ const SmartInnovations = () => {
             })}
           </motion.div>
 
-          {/* Right - Interior Image */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -139,7 +134,6 @@ const SmartInnovations = () => {
           </motion.div>
         </div>
 
-        {/* Bottom Section - Dashboard Visualization */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}

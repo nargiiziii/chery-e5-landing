@@ -28,14 +28,12 @@ const Navbar = ({ scrolled }) => {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-20 px-6">
-          {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="text-3xl font-display font-bold gradient-text">
               CHERY
             </div>
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
               <button
@@ -53,7 +51,6 @@ const Navbar = ({ scrolled }) => {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
             onClick={() => setIsOpen(!isOpen)}
@@ -62,7 +59,6 @@ const Navbar = ({ scrolled }) => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden bg-steel-800/95 backdrop-blur-lg border-t border-white/10">
             <div className="px-6 py-4 space-y-4">
